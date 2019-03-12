@@ -7,6 +7,17 @@ video {
   z-index: -1;
 }
 
+body:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url('grid.png') no-repeat center center/cover;
+	width: 100%;
+	height: 100%;
+	filter: grayscale(1) opacity(0.5);
+}
+
 .logo {
   background: url('logo.svg') no-repeat center center/66%;
   filter: invert(0);
@@ -27,9 +38,10 @@ video {
   bottom: 0;
   left: 0;
   background: linear-gradient(
-    135deg,
+    160deg,
     rgba(0, 0, 0, 0.25) 0%,
-    rgba(35, 83, 138, 0.7) 100%
+    rgba(0, 0, 0, 0.25) 55%,
+    rgba(35, 83, 138, 1) 100%
   );
 }
 
